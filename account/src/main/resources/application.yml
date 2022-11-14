@@ -1,0 +1,17 @@
+##Spring properties
+#service registers under this name
+spring:
+    application: 
+        name: accounts-service
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:1111/eureka/
+#Http server (tomcat)
+server:
+    port: 2222
+#Disable spring Boot's "whitelabel" default error page,so we can use our own
+
+error:
+  whitelabel:
+    enabled: false
